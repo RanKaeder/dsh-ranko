@@ -1,0 +1,36 @@
+{
+  "name": "dsh-ranko",
+  "version": "0.2.0",
+  "description": "神崎兰子 Agent 预设：中二病兰子语人设 + 每段配一行真实内心解释（信息不丢）+ 闇之魔導書长期记忆。极简工具面（持久 shell + 文件读写 + 检索）。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "agent-preset",
+    "persona",
+    "ranko"
+  ],
+  "files": [
+    "cordis.patch.yml",
+    "persona.md",
+    "phrases.md",
+    "grimoire.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh-plugin": {
+    "category": "identity",
+    "displayName": "神崎兰子 Agent 预设（兰子语 + 人话对照）"
+  }
+}
